@@ -1,17 +1,20 @@
-# Brunch app
+# i18next with brunch
 
-This is HTML5 application, built with [Brunch](http://brunch.io).
+Dead simple example configuration/setup for i18next and brunch.
 
-## Getting started
-* Install (if you don't have them):
-    * [Node.js](http://nodejs.org): `brew install node` on OS X
-    * [Brunch](http://brunch.io): `npm install -g brunch`
-    * [Bower](http://bower.io): `npm install -g bower`
-    * Brunch plugins and Bower dependencies: `npm install & bower install`.
-* Run:
-    * `brunch watch --server` — watches the project with continuous rebuild. This will also launch HTTP server with [pushState](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history).
-    * `brunch build --production` — builds minified project for production
-* Learn:
-    * `public/` dir is fully auto-generated and served by HTTP server.  Write your code in `app/` dir.
-    * Place static files you want to be copied from `app/assets/` to `public/`.
-    * [Brunch site](http://brunch.io), [Chaplin site](http://chaplinjs.org)
+i18next http://i18next.com/
+
+brunch http://brunch.io/
+
+## Try to run demo
+
+    $ brunch watch --server
+    $ open http://localhost:3333/
+
+## Remarks
+
+* i18next tries to load translation resources `translation.json` from path like `/locales/:lang/translation.json`. According to brunch's convention, translation resource files should be organized like below:
+  * Create `app/assets/locales` directory.
+  * Create `app/assets/locales/:lang` sub directories for each languages you need.
+    * e.g. `app/assets/locales/en` for English, `app/assets/locales/es` for Spanish.
+  * Put `translation.json` under the sub directories you made.
