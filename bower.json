@@ -2,6 +2,8 @@
   "name": "your-app",
   "version": "0.0.1",
   "main": "public/app.js",
-  "dependencies": {},
+  "dependencies": {
+    "i18next": "~1.7.7"
+  },
   "overrides": {}
 }
