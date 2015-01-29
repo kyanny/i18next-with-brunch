@@ -1,8 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Test</title>
+    <title>i18next with brunch</title>
+    <script src="app.js"></script>
   </head>
   <body>
+    <h1>i18next with brunch</h1>
+
+    <p>Greeting: <span id="greeting"></span></p>
+
+    <ul>
+      <li><a href="/?setLng=en">English</a></li>
+      <li><a href="/?setLng=es">Spanish</a></li>
+    </ul>
+
+    <script>
+     require('app');
+    </script>
   </body>
 </html>
