@@ -3,18 +3,11 @@ function greeting(key) {
 }
 
 i18n.init({
-  load: 'current',
-  lngWhitelist: ['en', 'es'],
-  fallbackLng: 'en',
+  fallbackLng: 'en-US',
   ns: {
-    namespaces: ['translation', 'qs', 'sa'],
-    defaultNS: 'sa'
+    namespaces: ['translation', 'qs', 'sa']
   },
-  fallbackToDefaultNS: true,
-  fallbackNS: 'translation',
-  resGetPath: '/locales/__lng__/__ns__.json',
-  debug: true
+  resGetPath: '/locales/__lng__/__ns__.json'
 }, function(){
-  i18n.setDefaultNamespace('sa');
   greeting('greeting');
 });
