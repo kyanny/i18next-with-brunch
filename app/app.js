@@ -3,7 +3,7 @@ function greeting(key) {
 }
 
 i18n.init({
-  fallbackLng: 'en-US',
+  fallbackLng: 'en',
   ns: {
     namespaces: ['translation', 'qs', 'sa']
   },
