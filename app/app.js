@@ -9,5 +9,6 @@ i18n.init({
   },
   resGetPath: '/locales/__lng__/__ns__.json'
 }, function(){
+  console.log(i18n.t('greeting'));
   greeting('greeting');
 });
